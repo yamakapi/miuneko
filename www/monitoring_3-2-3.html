@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./public/css/style.css">
+  <style>
+    *{-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Meiryo, 'メイリオ', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', Osaka, 'MS PGothic', arial, helvetica, sans-serif}html{overflow:auto}body{position:relative;overflow-x:hidden;overflow-y:scroll;font-size:12px;height:100vh;margin:0px;padding:0px}a:active{-webkit-transform:translateY(2.5px);transform:translateY(2.5px)}.clearfix,.cf{zoom:1}.clearfix:before,.clearfix:after,.cf:before,.cf:after{content:"";display:table}.clearfix:after,.cf:after{clear:both}.text-red{color:red;font-weight:600}.text-green{color:#0f6ebe;font-weight:600}.text-center{text-align:center}.wrap{width:90%;margin:auto}.onethird{float:left;width:33.33%;padding-right:5px}.twothird{float:left;width:66.66%;padding-right:5px}.onesecond{float:left;width:50%;padding-right:5px}.end{padding-right:0}.small{width:90% !important}.appear{display:block !important}.hidden{display:none !important}.content{overflow:scroll;padding:0px;background-color:#ffffc1;border-left:1px solid #a38a76;border-right:1px solid #a38a76}.content-top{height:calc(100vh - 100px)}.content-about{height:calc(100% - 150px)}.content-index{height:calc(100% - 175px)}.content-index-kidney{height:calc(100% - 150px)}.content-kidney{height:calc(100% - 150px)}.content-monitoring{height:calc(100% - 125px)}.content-header-long{height:calc(100% - 175px)}.learning{background-color:#f7b52c;background:-webkit-gradient(linear, left top, left bottom, from(#f6b52c), color-stop(42%, #ffc97f), color-stop(62%, #fc962f), to(#f7b52c));background:linear-gradient(to bottom, #f6b52c 0%, #ffc97f 42%, #fc962f 62%, #f7b52c 100%)}.btn-learning{background-color:#f7b52c;background:-webkit-gradient(linear, left top, left bottom, from(#f6b52c), color-stop(0%, #f7b52c), color-stop(62%, #fc962f), to(#ffc97f));background:linear-gradient(to bottom, #f6b52c 0%, #f7b52c 0%, #fc962f 62%, #ffc97f 100%)}.monitoring{background-color:#85deaa;background:-webkit-gradient(linear, left top, left bottom, from(#96bf2d), color-stop(42%, #b6e560), color-stop(62%, #a8d63e), to(#87bc00));background:linear-gradient(to bottom, #96bf2d 0%, #b6e560 42%, #a8d63e 62%, #87bc00 100%)}.btn-monitoring{background-color:#85deaa;background:-webkit-gradient(linear, left top, left bottom, from(#96bf2d), color-stop(50%, #87bc00), color-stop(82%, #a8d63e), to(#b6e560));background:linear-gradient(to bottom, #96bf2d 0%, #87bc00 50%, #a8d63e 82%, #b6e560 100%)}.menu{padding:0}.menu.menu-medicine p{font-size:16px;line-height:36px;letter-spacing:-0.01em}.menu a{position:relative;display:block;text-decoration:none;width:100%;padding:2px;border-radius:15px;margin:15px 0;font-weight:600;border:3px solid #f7b52c;background:#ffffc1;color:#333333;letter-spacing:.05em;font-size:1.9em}.menu a.monitoring{border:3px solid #87bc00}.menu a li{display:block;border-radius:10px;padding:5px 15px;list-style:none;color:#fff;height:100%;width:100%}.menu a p{margin:0;padding:0;font-size:22px;font-weight:600;width:90%}.menu a p.p-top{width:100%;font-weight:400;font-size:20px;line-height:30px}.menu .withoutarrow{width:90%}.menu h1{text-align:center;margin:0;text-shadow:2px 2px 2px rgba(0,0,0,0.25)}.menu p{margin:5px 0;font-weight:400;font-size:20px}.menu .font-round{font-family:"Rounded Mplus 1c"}.menu img{width:100%}.menu .arrow{position:absolute;top:0;bottom:0;right:10px;margin:auto 0;width:25px;height:25px}.menu .menu-kidney{float:left;width:50%;height:160px;padding-right:10px;margin-bottom:10px}.menu .menu-kidney a{height:100%;position:relative}.menu .menu-kidney a p{font-size:18px;width:140px;letter-spacing:-.02em;position:absolute;top:0;bottom:0;left:10px;margin:auto 0;line-height:26px}.menu.btn-up a,.menu.btn-down a{float:left;width:60px;height:60px;margin:0;margin-right:5px}.menu.btn-up a li,.menu.btn-down a li{position:relative;padding:0}.menu.btn-up .blank,.menu.btn-down .blank{float:left;opacity:0;width:30px}.menu .arrow-center{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:30px;height:30px}.header-about{background-image:url("./public/img/back/back_about.png");background-size:cover;height:75px}.header-about .inner-header{height:100%;padding:10px}.header-about h1{color:#fff;text-align:center;font-size:32px;letter-spacing:-.01em;margin:3px 0}.header-kidney{background-image:url("./public/img/back/back_header_kidney.png");background-size:cover;height:75px}.header-kidney .inner-header{height:100%;padding:5px}.header-kidney h1{color:#fff;font-weight:600;font-size:24px;letter-spacing:.05em;line-height:1em;margin:3px 0 0px 0}.header-kidney h3{color:#fff;font-weight:600;font-size:19px;letter-spacing:.05em;margin:2px 0 0px 0}.header-monitoring{background-image:url("./public/img/back/back_header_note.png")}.header-monitoring-long{background-image:url("./public/img/back/back_header_monitoring.png");height:100px}.header-index-learning{background-image:url("./public/img/back/back_header_learning.png");background-size:cover;height:100px}.header-index-learning .inner-header{height:100%;padding:10px}.header-index-learning h1{color:#fff;text-align:center;font-size:38px;font-weight:600;letter-spacing:.05em;margin:13px 0}.header-index-monitoring{background-image:url("./public/img/back/back_header_monitoring.png");background-size:cover;height:100px}.header-index-monitoring .inner-header{height:100%;padding:10px}.header-index-monitoring h1{color:#fff;text-align:center;font-size:38px;font-weight:600;letter-spacing:.05em;margin:13px 0}.header-top{position:relative;overflow:hidden;padding:0px;background-color:white;background:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), color-stop(50%, transparent), color-stop(50%, transparent), to(rgba(0,0,0,0.1)));background:linear-gradient(rgba(255,255,255,0.3) 0%, transparent 50%, transparent 50%, rgba(0,0,0,0.1) 100%);border-left:1px solid #a38a76;border-right:1px solid #a38a76;height:75px}.header-top .title{width:200px;margin:18px auto}.header-top .home{position:absolute;top:18px;left:5%;width:40px}.header-top img{width:100%}footer{position:fixed;bottom:0;width:100vw;height:75px;background-color:#fff}footer a{position:relative;display:block;float:left;width:33.33%;text-decoration:none;text-align:center;line-height:3em;height:4.5em;letter-spacing:.3em;font-size:1.4em;font-weight:600;color:#000;background-color:#fff;background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), color-stop(50%, transparent), color-stop(50%, transparent), to(rgba(0,0,0,0.2)));background-image:linear-gradient(rgba(255,255,255,0.3) 0%, transparent 50%, transparent 50%, rgba(0,0,0,0.2) 100%);border:1px solid #a38a76}footer a img{position:absolute;display:block;height:75%;top:0;bottom:0;left:0;right:0;margin:auto}.footer-monitoring{position:fixed;bottom:0;width:100vw;height:50px;background-color:#fff}.footer-monitoring a{position:relative;display:block;float:left;width:25%;text-decoration:none;text-align:center;line-height:3em;height:3em;letter-spacing:.3em;font-size:1.4em;font-weight:600;color:#000;background-color:#fff;background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), color-stop(50%, transparent), color-stop(50%, transparent), to(rgba(0,0,0,0.2)));background-image:linear-gradient(rgba(255,255,255,0.3) 0%, transparent 50%, transparent 50%, rgba(0,0,0,0.2) 100%);border:1px solid #a38a76}.footer-monitoring a img{position:absolute;display:block;height:20px;top:0;bottom:0;left:0;right:0;margin:auto}.footer-top{border-left:1px solid #a38a76;border-right:1px solid #a38a76;background-image:url("./public/img/back/back_about_link.png");background-size:cover;height:25px}.footer-top a{background:none;border:none;width:100%;line-height:25px;text-align:center;font-size:16px;font-weight:300;letter-spacing:0;color:white}.header-content{background-color:#fff;background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.3)), color-stop(50%, transparent), color-stop(50%, transparent), to(rgba(0,0,0,0.2)));background-image:linear-gradient(rgba(255,255,255,0.3) 0%, transparent 50%, transparent 50%, rgba(0,0,0,0.2) 100%);width:calc(100vw - 2px);padding:5px 0}.header-content h2{padding:3px 0;color:#333333;font-size:21px;text-align:center;line-height:1.4em;letter-spacing:.01em;margin:0}.main{background-color:#ffffc1;padding:5px}.main h3{margin:10px 0;padding:6px;font-size:20px;font-weight:600;color:#333333;text-align:center;line-height:1.4em;background-color:#f7b52c;border-radius:50px}.main h3.method{background-color:#fff;color:red}.main h3.method.square{border-radius:20px}.main h3.h3-monitoring{background-color:#87b400;color:#fff}.main p{font-size:21px;font-weight:600;margin:5px 0}.main .mgt{margin-top:20px}.main .align-right{text-align:right}.main .hint{margin:10px 0;border-radius:20px;background-color:white}.main .hint h4{margin:0;padding:10px 0;background-color:#fdebdc;color:red;font-size:20px;text-align:center;line-height:24px;border-radius:20px 20px 0 0}.main .hint h5{margin:0;padding:8px 0;border-bottom:1px solid #cccccc;font-size:20px;font-weight:600;line-height:24px;text-align:center}.main .hint p{margin:0;padding:10px;font-size:20px;font-weight:300}.main .hint.hint-monitor{border:2px solid #87b400;border-radius:22px}.main .hint.hint-monitor h4{color:#fff;background-color:#87b400}.main .tips h4{display:inline-block;padding:3px 10px;margin:0;font-size:20px;letter-spacing:.1em;color:#4bae4f;background-color:#fff;border:1px solid #4bae4f;border-radius:5px}.main .question h4{font-size:20px;margin:0}.main .question p{text-align:right}.main .btn-list{display:inline-block;color:#000;-webkit-transform:scale(4);transform:scale(4);margin-right:3px;padding-top:2px}.main .text-content p{font-size:20px;font-weight:300;line-height:28px}.main .text-content li{font-size:21px}.main .text-content .text-note{text-align:center;font-size:13px}.main .input-content{margin:10px 0}.main .input-content input[type="text"],.main .input-content input[type="date"]{margin:5px 0;width:65%;border:1px solid #dddddd;font-size:21px;line-height:2em;text-align:center}.main .table-egfr{height:360px;overflow:scroll}.main .table-egfr table{width:100%}.main .table-egfr table th,.main .table-egfr table td{background-color:#fff;text-align:center;line-height:22px}.main .table-egfr table th{width:30px}.main .table-egfr table .td-date{font-size:16px}.main .table-egfr table .td-value{font-size:16px}.main .table-egfr table tr.head td{background-color:#e5f7ff}.main .table-egfr table tr.tr-green td{background-color:#eef7ae}.main .table-pressure{height:360px;overflow:scroll}.main .table-pressure table{width:100%}.main .table-pressure table th,.main .table-pressure table td{background-color:#fff;text-align:center;line-height:22px}.main .table-pressure table th{width:30px}.main .table-pressure table .td-date{font-size:16px}.main .table-pressure table .td-value{font-size:16px}.main .table-pressure table tr.head td{font-size:14px;background-color:#e5f7ff}.main .table-pressure table tr.tr-green td{background-color:#eef7ae}.main .input-egfr{list-style:none;margin:0;padding:0}.main .input-egfr li{float:left;width:60px;margin-right:5px}.main .input-egfr li input[type="text"]{width:100%;height:50px;line-height:50px;margin:0}.main .input-egfr .comma{width:25px}.main .input-egfr .comma p{width:100%;text-align:center;font-size:30px}.main .input-egfr .text-egfr{position:relative;float:left;height:50px}.main .input-egfr .text-egfr p{position:absolute;bottom:0;margin:0;width:120px;font-weight:300;font-size:17px}.main .result-content{margin:10px 0}.main .result-content input{width:100%;font-size:32px;font-weight:600;color:red;line-height:44px;text-align:center}.main .result-content label{line-height:44px;text-align:center;font-size:20px}.main .sub-content .image-content img.result{display:none}.main .sub-content{margin-top:12px}.main .sub-content .note-content{float:left;width:60%;background-color:#eeeeee;border-radius:15px;padding:5px 15px;font-size:.9em;letter-spacing:.05em}.main .sub-content .image-content{float:left;width:40%}.main .sub-content .image-content img{width:100%;height:auto}.main .sub-content .image-content-right{float:right}.main .sub-content .image-content-full{width:100%}.main .sub-content .image-content-full img{display:block;width:100%;margin:auto}.main .sub-content .image-content-center{width:100%}.main .sub-content .image-content-center img{display:block;width:40%;margin:0 auto}.main .sub-content .image-content-50{width:50%;margin-right:9%}.main table{background-color:white;border:1px solid #555555;border-collapse:collapse}.main th,.main td{border:1px solid #555555;padding:5px 10px;font-size:18px}.main th{width:60px;background-color:#ffdc91;font-weight:300}.msg-with-doctor{margin-top:20px}.msg-with-doctor img{width:100%}.msg-with-doctor p{margin:0;font-size:24px;font-weight:300;color:#000}.msg-with-doctor .comment{margin:0;font-size:20px}.msg-with-doctor .balloon{font-family:"Rounded Mplus 1c";font-weight:500;background-color:white;border:2px solid #5d2b21;border-radius:15px;padding:10px 15px}.kakenhi{width:140px;margin:auto}.kakenhi img{width:100%}
+
+  </style>
+</head>
+<body>
+  <header class="header-kidney header-monitoring">
+    <div class="inner-header cf">
+      <div class="wrap">
+        <h3>記録ノート3</h3>
+        <h1>カリウムの表</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="content content-monitoring">
+    <div class="wrap">
+        <div class="main">
+          <ul class="menu btn-up cf">
+            <a class="monitoring" id="up" style="text-align: center;width: 100%;" href="javascript:void(0)" ontouchstart=""><li class="btn-monitoring">
+              <div class="arrow-center"><img src="./public/img/others/arrow_up.png" alt=""></div>
+            </li></a>
+          </ul>
+          <div class="table-egfr" id="table">
+            <table class="table-egfr">
+              <tr class="head">
+                <th></th>
+                <td class="td-date">2018年 検査日</td>
+                <td class="td-value">mEq/L</td>
+              </tr>
+              <tr>
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">3.5</td>
+              </tr>
+              <tr class="tr-green">
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr>
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr class="tr-green">
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr>
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr class="tr-green">
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr>
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr class="tr-green">
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr>
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+              <tr class="tr-green">
+                <th><input name="select" type="radio"></th>
+                <td class="td-date">12月15日</td>
+                <td class="td-value">90</td>
+              </tr>
+            </table>
+          </div>
+          <ul class="menu btn-down cf">
+            <a class="monitoring" id="down" style="text-align: center;width: 100%;" href="javascript:void(0)" ontouchstart=""><li class="btn-monitoring">
+              <div class="arrow-center"><img src="./public/img/others/arrow_down.png" alt=""></div>
+            </li></a>
+          </ul>
+          <ul class="menu cf">
+            <div class="onesecond">
+              <a class="monitoring" id="submit" style="text-align: center;margin-top: 0;" href="javascript:void(0)" ontouchstart=""><li class="btn-monitoring">
+                <p>修正</p>
+                <div class="arrow"><img src="./public/img/others/arrow.png" alt=""></div>
+              </li></a>
+            </div>
+            <div class="onesecond">
+              <a class="monitoring" id="submit" style="text-align: center;margin-top: 0;" href="index_monitoring.html" ontouchstart=""><li class="btn-monitoring">
+                <p style="">削除</p>
+                <div class="arrow"><img src="./public/img/others/arrow.png" alt=""></div>
+              </li></a>
+            </div>
+          </ul>
+          <div class="sub-content cf">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <footer class="footer-monitoring">
+    <div class="inner-footer">
+      <div class="cf">
+          <a ontouchstart="" class="btn btn-pre cf" href="./monitoring_3-1.html">
+            <img src="./public/img/footer/back_monitoring.png" alt="">
+          </a>
+          <a ontouchstart="" class="btn btn-pre cf" href="./monitoring_3-2-1.html">
+            <img src="./public/img/footer/register_monitoring.png" alt="">
+          </a>
+          <a ontouchstart="" id="next" class="btn btn-next btn-last cf" href="./monitoring_3-2-3.html">
+            <img src="./public/img/footer/table_monitoring.png" alt="">
+          </a>
+          <a ontouchstart="" id="next" class="btn btn-next btn-last cf" href="./monitoring_3-2-2.html">
+            <img src="./public/img/footer/graph_monitoring.png" alt="">
+          </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+(() => {
+$(function() {
+
+$('#up').on('click', function() {
+  const now = $('#table').scrollTop();
+  $('#table').scrollTop(now - 50);
+});
+
+$('#down').on('click', function() {
+  const now = $('#table').scrollTop();
+  $('#table').scrollTop(now + 50);
+});
+
+
+});
+})();
+</script>
+</html>
